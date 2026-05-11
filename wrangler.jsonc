@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "carsellingweb",
+  "name": "chentian-carparts",
+  "account_id": "211e5b9ceb8f9219d8b8491c75940a65",
   "compatibility_date": "2026-04-28",
   "observability": {
     "enabled": true
