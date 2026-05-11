@@ -173,6 +173,38 @@
   });
 })();
 
+// ── Hamburger menu ───────────────────────────────────────────────────────────
+(function () {
+  const btn = document.getElementById("hamburger");
+  const menu = document.querySelector(".header-right");
+  if (!btn || !menu) return;
+
+  function close() {
+    menu.classList.remove("is-open");
+    btn.setAttribute("aria-expanded", "false");
+    btn.innerHTML = "&#9776;";
+  }
+
+  btn.addEventListener("click", () => {
+    const opening = !menu.classList.contains("is-open");
+    if (opening) {
+      menu.classList.add("is-open");
+      btn.setAttribute("aria-expanded", "true");
+      btn.innerHTML = "&#10005;";
+    } else {
+      close();
+    }
+  });
+
+  // Close when any nav link or CTA is tapped
+  menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", close));
+
+  // Close when tapping outside the header
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".site-header")) close();
+  });
+})();
+
 // ── Carousel ─────────────────────────────────────────────────────────────────
 (function () {
   const carousel = document.getElementById("about-carousel");
