@@ -1,78 +1,89 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="陈田拆车件主营原厂拆车件、事故车件资源整合、抵押车信息展示、视频验货和全国物流发货。"
-    />
+    <meta name="description" content="Chentian Auto Parts — OEM salvage parts, engine, transmission, body panels, and collateral vehicle listings. Nationwide shipping from Guangzhou." />
     <meta name="theme-color" content="#0f3b2f" />
-    <title>陈田拆车件 | 原厂拆车件与抵押车信息</title>
+    <title>Chentian Auto Parts | OEM Salvage Parts & Vehicles</title>
     <link rel="preload" href="assets/images/hero-workshop.jpg" as="image" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="icon" href="assets/images/logo.jpg" type="image/jpeg" />
   </head>
   <body>
     <div class="topbar">
-      <a class="topbar-brand" href="#home" aria-label="陈田拆车件首页">
-        <img class="topbar-logo" src="assets/images/logo.jpg" alt="" />
-        <span>广州陈田汽车配件资源</span>
+      <a class="topbar-brand" href="#home" aria-label="Chentian Auto Parts">
+        <svg class="topbar-logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="6" fill="rgba(255,255,255,0.18)"/>
+          <text x="16" y="22" text-anchor="middle" fill="white"
+            font-size="14" font-weight="900"
+            font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+            letter-spacing="1">CT</text>
+        </svg>
+        <span data-i18n="topbar-brand">Chentian Auto Parts</span>
       </a>
-      <span>视频验货</span>
-      <span>全国物流</span>
-      <span>手续核验</span>
+      <span data-i18n="topbar-video">Video Inspection</span>
+      <span data-i18n="topbar-logistics">Nationwide Shipping</span>
+      <span data-i18n="topbar-docs">Document Verified</span>
     </div>
 
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="陈田拆车件首页">
+      <a class="brand" href="#home" aria-label="Chentian Auto Parts">
+        <svg class="brand-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="44" height="44" rx="9" fill="#0f3b2f"/>
+          <text x="22" y="30" text-anchor="middle" fill="white"
+            font-size="20" font-weight="900"
+            font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+            letter-spacing="2">CT</text>
+        </svg>
         <span>
-          <strong>陈田拆车件</strong>
-          <small>Car Parts & Vehicles</small>
+          <strong data-i18n="brand-name">Chentian Auto Parts</strong>
+          <small data-i18n="brand-sub">陈田拆车件</small>
         </span>
       </a>
 
-      <nav class="main-nav" aria-label="主导航">
-        <a href="#about">公司背景</a>
-        <a href="#parts">拆车件</a>
-        <a href="#cars">抵押车</a>
-        <a href="#contact">联系方式</a>
-      </nav>
-
-      <a class="nav-cta" href="#contact">立即询价</a>
+      <div class="header-right">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about" data-i18n="nav-about">About</a>
+          <a href="#parts" data-i18n="nav-parts">Car Parts</a>
+          <a href="#cars" data-i18n="nav-cars">Vehicles</a>
+          <a href="#contact" data-i18n="nav-contact">Contact</a>
+        </nav>
+        <a class="nav-cta" href="#contact" data-i18n="nav-cta">Get Quote</a>
+        <button class="lang-toggle" id="lang-toggle" type="button">中文</button>
+      </div>
     </header>
 
     <main id="home">
-      <section class="hero" aria-label="陈田拆车件展示">
+      <section class="hero" aria-label="Chentian Auto Parts">
         <div class="hero-content">
-          <p class="eyebrow">原厂拆车件 · 抵押车信息 · 全国发货</p>
-          <h1>陈田拆车件</h1>
-          <p class="hero-copy">
-            扎根陈田汽车配件流通圈，提供发动机、变速箱、灯具外观件、底盘悬挂件等拆车件资源，
-            同步展示可咨询的抵押车与准现车信息。
+          <p class="eyebrow" data-i18n="hero-eyebrow">OEM Salvage Parts · Vehicle Listings · Nationwide Delivery</p>
+          <h1 data-i18n="hero-h1">Chentian Auto Parts</h1>
+          <p class="hero-copy" data-i18n="hero-copy">
+            Based in Guangzhou Chentian auto parts market, we supply engines, transmissions, lighting, body panels, and chassis components — plus collateral vehicle listings with on-site inspection support.
           </p>
-          <div class="hero-actions" aria-label="主要操作">
-            <a class="button button-primary" href="#parts">查看车件</a>
-            <a class="button button-secondary" href="#cars">查看抵押车</a>
+          <div class="hero-actions" aria-label="Main actions">
+            <a class="button button-primary" href="#parts" data-i18n="hero-btn-parts">Browse Parts</a>
+            <a class="button button-secondary" href="#cars" data-i18n="hero-btn-cars">View Vehicles</a>
           </div>
         </div>
 
-        <div class="hero-strip" aria-label="服务亮点">
+        <div class="hero-strip" aria-label="Service highlights">
           <div>
-            <strong>10+ 年</strong>
-            <span>行业资源沉淀</span>
+            <strong>10+</strong>
+            <span data-i18n="strip-years">Years of Experience</span>
           </div>
           <div>
-            <strong>视频</strong>
-            <span>看货验车</span>
+            <strong data-i18n="strip-video-title">Video</strong>
+            <span data-i18n="strip-video-sub">On-site Inspection</span>
           </div>
           <div>
-            <strong>物流</strong>
-            <span>全国发货</span>
+            <strong data-i18n="strip-logistics-title">Logistics</strong>
+            <span data-i18n="strip-logistics-sub">Nationwide Delivery</span>
           </div>
           <div>
-            <strong>手续</strong>
-            <span>交易前核验</span>
+            <strong data-i18n="strip-docs-title">Verified</strong>
+            <span data-i18n="strip-docs-sub">Pre-sale Documentation</span>
           </div>
         </div>
       </section>
@@ -80,69 +91,77 @@
       <section id="about" class="section section-about">
         <div class="section-heading">
           <p class="section-kicker">Company</p>
-          <h2>公司背景</h2>
+          <h2 data-i18n="about-h2">About Us</h2>
         </div>
 
         <div class="about-layout">
           <div class="about-copy">
-            <p>
-              陈田拆车件专注汽车拆车件供应、车件调配和抵押车信息咨询。我们从陈田及周边成熟汽配渠道整合现货资源，
-              覆盖日系、德系、美系、国产新能源和商用车型常用件。
-              <div class="about-video">
-  <video controls preload="metadata" poster="assets/images/hero-workshop.jpg">
-    <source src="assets/videos/intro.mp4" type="video/mp4" />
-    您的浏览器不支持视频播放。
-  </video>
-</div>
-
+            <p data-i18n="about-p1">
+              Chentian Auto Parts specializes in salvage part supply, parts sourcing, and collateral vehicle consultations. We aggregate in-stock resources from Chentian and surrounding established auto parts channels, covering Japanese, German, American, domestic new-energy, and commercial vehicle models.
             </p>
-            <p>
-              车件支持图片、视频、零件号和成色确认；车辆信息以实车、手续和现场核验为准。交易前建议核对车辆来源、
-              权属状态、抵押状态及合同条款。
+            <p data-i18n="about-p2">
+              Parts are supported by photos, video, part numbers, and condition verification. Vehicle info is subject to on-site inspection of the car, documents, and ownership status. We recommend verifying vehicle origin, ownership, collateral status, and contract terms before any transaction.
             </p>
           </div>
 
-          <div class="service-grid" aria-label="服务内容">
-            <article>
-              <span>01</span>
-              <h3>拆车件供应</h3>
-              <p>发动机总成、变速箱、灯具、钣金、底盘、电器模块等。</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>精准找件</h3>
-              <p>按车型、年份、排量、零件号和实拍图协助匹配。</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>抵押车信息</h3>
-              <p>展示可咨询车辆，支持预约看车和手续核验。</p>
-            </article>
-            <article>
-              <span>04</span>
-              <h3>物流交付</h3>
-              <p>大件木架、整车拖运、到站自提或专线配送。</p>
-            </article>
+          <div class="photo-carousel" id="about-carousel" aria-label="Factory photos">
+            <img src="assets/images/hero-workshop.jpg" alt="Chentian workshop"   class="carousel-slide active" loading="lazy"/>
+            <img src="assets/images/part-engine.jpg"   alt="Engine parts"        class="carousel-slide" loading="lazy"/>
+            <img src="assets/images/part-wheel.jpg"    alt="Wheel and chassis"   class="carousel-slide" loading="lazy"/>
+            <img src="assets/images/part-light.jpg"    alt="Lighting components" class="carousel-slide" loading="lazy"/>
+            <img src="assets/images/car-suv.jpg"       alt="Vehicle in stock"    class="carousel-slide" loading="lazy"/>
+            <button class="carousel-btn carousel-btn--prev" type="button" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-btn--next" type="button" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots" aria-hidden="true">
+              <span class="carousel-dot active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
           </div>
+        </div>
+
+        <div class="service-grid service-grid--row" aria-label="Services">
+          <article>
+            <span>01</span>
+            <h3 data-i18n="svc1-title">Salvage Part Supply</h3>
+            <p data-i18n="svc1-desc">Engines, transmissions, lights, body panels, chassis, and electrical modules.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-i18n="svc2-title">Precision Sourcing</h3>
+            <p data-i18n="svc2-desc">Match by model, year, displacement, part number, and real photos.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-i18n="svc3-title">Vehicle Listings</h3>
+            <p data-i18n="svc3-desc">Consult available vehicles, schedule viewings, and verify documentation.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3 data-i18n="svc4-title">Logistics & Delivery</h3>
+            <p data-i18n="svc4-desc">Crate packaging, whole-vehicle towing, pickup, or dedicated freight lines.</p>
+          </article>
         </div>
       </section>
 
-      <section class="section inventory-panel" aria-label="库存查询">
+      <section class="section inventory-panel" aria-label="Inventory search">
         <div class="section-heading">
           <p class="section-kicker">Inventory</p>
-          <h2>现货与车辆信息</h2>
+          <h2 data-i18n="inventory-h2">Stock & Vehicle Info</h2>
         </div>
 
         <div class="stock-tools">
           <label class="search-box" for="stock-search">
-            <span>搜索</span>
-            <input id="stock-search" type="search" placeholder="车型、配件、年份、关键词" autocomplete="off" />
+            <span data-i18n="search-label">Search</span>
+            <input id="stock-search" type="search" placeholder="Model, part, year, keyword…" autocomplete="off" data-i18n-placeholder="search-placeholder"/>
           </label>
 
-          <div class="segment" aria-label="库存筛选">
-            <button class="segment-button is-active" type="button" data-filter="all">全部</button>
-            <button class="segment-button" type="button" data-filter="parts">只看拆车件</button>
-            <button class="segment-button" type="button" data-filter="cars">只看抵押车</button>
+          <div class="segment" aria-label="Inventory filter">
+            <button class="segment-button is-active" type="button" data-filter="all"  data-i18n="filter-all">All</button>
+            <button class="segment-button" type="button" data-filter="parts" data-i18n="filter-parts">Parts Only</button>
+            <button class="segment-button" type="button" data-filter="cars"  data-i18n="filter-cars">Vehicles Only</button>
           </div>
         </div>
       </section>
@@ -151,62 +170,62 @@
         <div class="section-heading inline-heading">
           <div>
             <p class="section-kicker">Parts</p>
-            <h2>拆车件照片与信息</h2>
+            <h2 data-i18n="parts-h2">Salvage Parts Gallery</h2>
           </div>
-          <a class="text-link" href="#contact">找不到配件？发图询价</a>
+          <a class="text-link" href="#contact" data-i18n="parts-cta">Can't find a part? Send a photo for a quote</a>
         </div>
 
         <div id="parts-grid" class="listing-grid" aria-live="polite"></div>
-        <p id="parts-empty" class="empty-state" hidden>暂未匹配到拆车件，请换个关键词或直接联系我们。</p>
+        <p id="parts-empty" class="empty-state" hidden data-i18n="parts-empty">No matching parts found — try a different keyword or contact us directly.</p>
       </section>
 
       <section id="cars" class="section section-alt">
         <div class="section-heading inline-heading">
           <div>
             <p class="section-kicker">Vehicles</p>
-            <h2>抵押车照片与信息</h2>
+            <h2 data-i18n="cars-h2">Vehicle Listings</h2>
           </div>
-          <a class="text-link" href="#contact">预约看车</a>
+          <a class="text-link" href="#contact" data-i18n="cars-cta">Schedule a viewing</a>
         </div>
-        <p class="notice">抵押车信息仅供咨询展示，交易前请现场核验手续、合同条款、权属状态和车辆状态。</p>
+        <p class="notice" data-i18n="cars-notice">Vehicle listings are for consultation only. Please verify documents, contract terms, ownership, and vehicle condition on-site before any transaction.</p>
 
         <div id="cars-grid" class="listing-grid" aria-live="polite"></div>
-        <p id="cars-empty" class="empty-state" hidden>暂未匹配到车辆，请换个关键词或直接联系我们。</p>
+        <p id="cars-empty" class="empty-state" hidden data-i18n="cars-empty">No matching vehicles found — try a different keyword or contact us directly.</p>
       </section>
 
       <section id="contact" class="section contact-section">
         <div class="section-heading">
           <p class="section-kicker">Contact</p>
-          <h2>公司联系方式</h2>
+          <h2 data-i18n="contact-h2">Get in Touch</h2>
         </div>
 
         <div class="contact-layout">
           <div class="contact-card">
-            <h3>联系陈田拆车件</h3>
-            <p>
-              发车型、年份、排量、车架号后 6 位、零件照片或车辆需求，我们会按现货情况回复图片、成色和报价。
+            <h3 data-i18n="contact-card-title">Contact Chentian Auto Parts</h3>
+            <p data-i18n="contact-card-desc">
+              Send us the model, year, displacement, last 6 digits of the VIN, a parts photo, or your vehicle requirements — we'll reply with stock photos, condition details, and a quote.
             </p>
             <div class="contact-actions">
-              <a id="phone-link" class="button button-primary" href="tel:+8613800000000">电话咨询</a>
-              <a id="sms-link" class="button button-secondary" href="sms:+8613800000000">短信发需求</a>
+              <a id="phone-link" class="button button-primary" href="tel:+8613800000000" data-i18n="contact-call">Call Us</a>
+              <a id="sms-link" class="button button-secondary" href="sms:+8613800000000" data-i18n="contact-sms">Send Requirements</a>
             </div>
           </div>
 
           <dl class="contact-list">
             <div>
-              <dt>电话</dt>
+              <dt data-i18n="contact-dt-phone">Phone</dt>
               <dd id="contact-phone">13760885202</dd>
             </div>
             <div>
-              <dt>微信</dt>
-              <dd id="contact-wechat">   13760885202</dd>
+              <dt data-i18n="contact-dt-wechat">WeChat</dt>
+              <dd id="contact-wechat">13760885202</dd>
             </div>
-            <div> 
-              <dt>地址</dt>
+            <div>
+              <dt data-i18n="contact-dt-address">Address</dt>
               <dd id="contact-address">广州市白云区</dd>
             </div>
             <div>
-              <dt>营业时间</dt>
+              <dt data-i18n="contact-dt-hours">Hours</dt>
               <dd id="contact-hours">09:00 - 20:00</dd>
             </div>
           </dl>
@@ -215,8 +234,8 @@
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> 陈田拆车件. 页面图片为占位素材，实际库存以现场和沟通确认为准。</p>
-      <a href="#home">返回顶部</a>
+      <p data-i18n="footer-copy">© <span id="year"></span> Chentian Auto Parts. Product images are for reference only — actual inventory confirmed on-site or by direct communication.</p>
+      <a href="#home" data-i18n="footer-top">Back to Top</a>
     </footer>
 
     <script src="assets/js/data.js"></script>
